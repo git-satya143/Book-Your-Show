@@ -27,7 +27,7 @@ public class Show {
     @JoinColumn(name = "movie_id", nullable = false)
     private Movie movie;
     @ManyToOne
-    @JoinColumn(name = "movie_id", nullable = false)
+    @JoinColumn(name = "screen_id", nullable = false)
     private Screen screen;
     @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
     private List<ShowSeat> showSeats;
